@@ -12,6 +12,10 @@ npm install js-number-formatter
 // -- Require the module
 const { JS_NumberFormat } = require('js-number-formatter')
 
+const options = {
+  // ... check the parameters section for more info on options
+}
+
 // -- Call function and pass the value to format and options to it or just the value
 JS_NumberFormat(value, options)
 ```
@@ -33,7 +37,9 @@ JS_NumberFormat(value, options)
         Configuration options to pass to 
         <ul>
           <li>
-            <code>op_ReturnZeroIfNoDigit</code> true by default</li>
+            <code>op_ReturnZeroIfNoDigit</code>
+            <br/>
+            <b>true</b> by default</li>
         </ul>
       </td>
     </tr>
