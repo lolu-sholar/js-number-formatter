@@ -18,13 +18,21 @@ JS_NumberFormat(value, options)
 # Parameters
 <table>
   <thead>
-    <td style='background: #eee;'>Parameter</td>
-    <td style='background: #eee;'>Description</td>
+    <td>Parameter</td>
+    <td>Description</td>
   </thead>
   <tbody>
     <tr>
       <td>value</td>
       <td>The value to format which can be a number or string</td>
+    </tr>
+    <tr>
+      <td>options</td>
+      <td>
+        <ul>
+          <li>```op_ReturnZeroIfNoDigit``` true by default</li>
+        </ul>
+      </td>
     </tr>
   </tbody>
 </table>
