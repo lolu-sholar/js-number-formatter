@@ -1,14 +1,14 @@
 # Number Formatter
 #### A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.
 
-# Setup
+# 💾 Setup
 You need to have NodeJS installed on your computer before using <code>npm</code>.
 Open a terminal/command prompt and enter the codes below to install the package:
 ```javascript
 npm install js-number-formatter
 ```
 
-# Usage
+# 🔨 Usage
 ```javascript
 // -- Require the module
 const { JS_NumberFormat } = require('js-number-formatter')
@@ -23,7 +23,7 @@ const options = {
 JS_NumberFormat(value, options)
 ```
 
-# Parameters
+# 📙 Parameters
 <table>
   <thead>
     <td>Parameter</td>
@@ -43,13 +43,53 @@ JS_NumberFormat(value, options)
             <b>true</b> by default<br/>
             Returns zero '0' if string contains no digits
           </li>
+          <li>
+            <code>op_ReturnAbsoluteNumber</code><br/>
+            <b>true</b> by default<br/>
+            Return the absolute number without possible preceeding zeros '0'
+          </li>
+          <li>
+            <code>op_AllowSign</code><br/>
+            <b>true</b> by default<br/>
+            Allows sign (-) if true, removes any present sign if false
+          </li>
+          <li>
+            <code>op_AllowDecimal</code><br/>
+            <b>true</b> by default<br/>
+            If decimal should be allowed or not
+          </li>
+          <li>
+            <code>op_ForceDecimal</code><br/>
+            <b>true</b> by default<br/>
+            Forces decimal even if string contains no decimal points (but only if op_AllowDecimal is true)
+          </li>
+          <li>
+            <code>op_AppendZeroToDecimal</code><br/>
+            <b>true</b> by default<br/>
+            Appends zero '0' to result if just one digit is found after the last decimal point
+          </li>
+          <li>
+            <code>op_DecimalDelimiterChar</code><br/>
+            <b>'.'</b> by default<br/>
+            Character to use im place of the decimal period symbol
+          </li>
+          <li>
+            <code>op_DelimiterChar</code><br/>
+            <b>','</b> by default<br/>
+            Thousands separator
+          </li>
+          <li>
+            <code>op_AddSpaceToDelimiter</code><br/>
+            <b>false</b> by default<br/>
+            Thousands character spacing with ' '
+          </li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-# Examples
+# 🎨 Examples
 ```javascript
 JS_NumberFormat(3892) // Result: 3,892.00
 
