@@ -12,6 +12,8 @@ npm install js-number-formatter
 // -- Require the module
 const { JS_NumberFormat } = require('js-number-formatter')
 
+const value = '3.142857'
+
 const options = {
   // ... check the parameters section for more info on options
 }
@@ -34,12 +36,12 @@ JS_NumberFormat(value, options)
     <tr>
       <td>options</td>
       <td>
-        Configuration options to pass to 
         <ul>
           <li>
-            <code>op_ReturnZeroIfNoDigit</code>
-            <br/>
-            <b>true</b> by default</li>
+            <code>op_ReturnZeroIfNoDigit</code><br/>
+            <b>true</b> by default<br/>
+            Returns zero '0' if string contains no digits
+          </li>
         </ul>
       </td>
     </tr>
