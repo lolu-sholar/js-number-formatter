@@ -2,7 +2,8 @@
 #### A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.
 
 # Setup
-You need to have NodeJS installed on your computer before using <code>npm</code>
+You need to have NodeJS installed on your computer before using <code>npm</code>.
+Open a terminal/command prompt and enter the codes below to install the package:
 ```javascript
 npm install js-number-formatter
 ```
