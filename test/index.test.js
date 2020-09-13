@@ -1,5 +1,5 @@
-const { JS_NumberFormat } = require('../index')
-const assert = require('assert').strict
+var JS_NumberFormat = require('../index')
+var assert = require('assert').strict
 
 describe('integration test', function(e){
   it("should receive input value and return a formatted result", function(){
