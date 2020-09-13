@@ -1,3 +1,4 @@
+# Number Formatter
 ##### A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.
 
 # Setup
@@ -17,14 +18,13 @@ JS_NumberFormat(value, options)
 # Parameters
 <table>
   <thead>
-    <tr>
-      <td>Parameter</td>
-      <td>Description</td>
-    </tr>
+    <td style='background: #eee;'>Parameter</td>
+    <td style='background: #eee;'>Description</td>
   </thead>
   <tbody>
     <tr>
-      <td></td>
+      <td>value</td>
+      <td>The value to format which can be a number or string</td>
     </tr>
   </tbody>
 </table>
