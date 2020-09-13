@@ -2,11 +2,28 @@
 A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.
 
 # Setup
-<pre><code>npm install js-number-formatter</code></pre>
+```javascript
+npm install js-number-formatter
+```
 
 # Usage
 ```javascript
 const { JS_NumberFormat } = require('js-number-formatter')
+
+JS_NumberFormat(value, options)
+```
+
+# Examples
+```javascript
+JS_NumberFormat(3892) // Result: 3,892.00
+
+JS_NumberFormat('140hajs7') // Result: 1,407.00
+
+JS_NumberFormat("you can't be serious ...") // Result: 0
+
+JS_NumberFormat("Hello World 20-06-2019", {
+  op_AllowSign: false
+}) // Result: 20,062,019.00
 
 JS_NumberFormat('-00034dj^nkjlsd$knls4h%bj.34.5', {
   // -- Returns zero '0' if string contains no digits
