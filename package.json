@@ -4,7 +4,7 @@
   "description": "A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test/index.test.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/lolu-sholar/js-number-formatter/issues"
   },
-  "homepage": "https://github.com/lolu-sholar/js-number-formatter#readme"
+  "homepage": "https://github.com/lolu-sholar/js-number-formatter#readme",
+  "dependencies": {
+    "mocha": "^8.1.3"
+  }
 }
