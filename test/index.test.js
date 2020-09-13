@@ -1,4 +1,4 @@
-var JS_NumberFormat = require('../index')
+var { JS_NumberFormat } = require('../index')
 var assert = require('assert').strict
 
 describe('integration test', function(e){

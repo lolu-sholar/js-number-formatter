@@ -4,7 +4,7 @@
   "description": "A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/index.test.js"
+    "test": "mocha --require ts-node/register ./test/index.test.js"
   },
   "repository": {
     "type": "git",
