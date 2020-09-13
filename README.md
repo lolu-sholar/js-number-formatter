@@ -1,7 +1,8 @@
 # Number Formatter
-##### A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.
+#### A javascript module that scans through string to remove non-numerals and formats out any found numbers based on configuration passed to it.
 
 # Setup
+You need to have NodeJS installed on your computer before using <code>npm</code>
 ```javascript
 npm install js-number-formatter
 ```
@@ -29,8 +30,10 @@ JS_NumberFormat(value, options)
     <tr>
       <td>options</td>
       <td>
+        Configuration options to pass to 
         <ul>
-          <li>```op_ReturnZeroIfNoDigit``` true by default</li>
+          <li>
+            <code>op_ReturnZeroIfNoDigit</code> true by default</li>
         </ul>
       </td>
     </tr>
