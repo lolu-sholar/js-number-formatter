@@ -7,7 +7,7 @@ before_script:
 
 script:  
   - npm install
-  - npm run postinstall
+  - npm run test
 
 after_script:  
   - npm run test
