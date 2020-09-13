@@ -5,7 +5,8 @@ A javascript module that scans through string to remove non-numerals and formats
 <pre><code>npm install js-number-formatter</code></pre>
 
 # Usage
-<pre><code>const { JS_NumberFormat } = require('js-number-formatter')
+```javascript
+const { JS_NumberFormat } = require('js-number-formatter')
 
 JS_NumberFormat('-00034dj^nkjlsd$knls4h%bj.34.5', {
   // -- Returns zero '0' if string contains no digits
@@ -36,4 +37,4 @@ JS_NumberFormat('-00034dj^nkjlsd$knls4h%bj.34.5', {
   // default: false [test: '-00034dj^nkjlsd$knls4h%bj.34.5' | true: -34, 434.50 | false: -34,434.50]
   op_AddSpaceToDelimiter: true
 })
-</code></pre>
+```
